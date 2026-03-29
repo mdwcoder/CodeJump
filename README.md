@@ -2,7 +2,13 @@
 
 Intent-driven desktop code navigation for large projects.
 
-CodeJump is a compact desktop overlay for Linux and macOS built with Python and Flet. It is not an editor, not an IDE, and not a replacement for VS Code or Cursor. Its job is narrow and fast: index a project, understand short developer intent queries, rank likely files/folders/symbols, and jump you straight into your configured editor.
+CodeJump is a compact desktop overlay for Linux and macOS built with Python and Flet. It is not an editor, not an IDE, and not a replacement for VS Code or Cursor. Its job is narrow and fast: index a project, understand short developer intent queries, rank likely files, folders and symbols, and jump you straight into your configured editor.
+
+This project is a desktop utility first.
+
+- The main product is the windowed overlay app.
+- `filejump` is only a convenience launcher for opening that desktop app.
+- The terminal is part of installation and launch, not the core UX.
 
 ## Quickstart
 
@@ -10,7 +16,6 @@ CodeJump is a compact desktop overlay for Linux and macOS built with Python and 
 git clone <your-repo-url>
 cd FileJumpOverlay
 bash init.sh
-filejump
 ```
 
 If `init.sh` is not executable:
@@ -18,6 +23,18 @@ If `init.sh` is not executable:
 ```bash
 chmod +x init.sh
 ./init.sh
+```
+
+Then open the app with either:
+
+```bash
+filejump
+```
+
+or:
+
+```bash
+python -m codejump.main
 ```
 
 `init.sh` will:
@@ -84,13 +101,12 @@ cd FileJumpOverlay
 bash init.sh
 ```
 
-Manual development setup:
+Manual setup:
 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-python -m codejump.main
 ```
 
 Requirements:
@@ -102,21 +118,25 @@ Requirements:
   - `cursor`
   - `zed`
 
-## Basic Usage
+## Launching The App
 
-Launch the app:
+Primary launch options:
 
 ```bash
 filejump
 ```
 
-Or directly:
+or:
 
 ```bash
 python -m codejump.main
 ```
 
-Typical flow:
+`filejump` is not a separate CLI product. It simply opens the CodeJump desktop app after `init.sh` installs the launcher.
+
+## Basic Usage
+
+Typical flow inside the app:
 
 1. Add a project from the header.
 2. Set name, root path, and editor command.
@@ -304,7 +324,7 @@ That will:
 - reuse the local virtualenv if present
 - reinstall dependencies into that same environment
 - refresh the `filejump` launcher
-- launch the app
+- launch the desktop app
 
 This is useful when:
 
