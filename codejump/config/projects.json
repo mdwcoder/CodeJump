@@ -1,0 +1,15 @@
+{
+  "projects": [
+    {
+      "id": "6b33019aafa4463f8f1702b6b8831116",
+      "name": "FileJumpOverlay",
+      "root_path": "/home/code/Documentos/CodeDir/MyUtils/FileJumpOverlay",
+      "editor_command": "code",
+      "priority_extensions": [
+        ".py"
+      ],
+      "ignored_dirs": [],
+      "aliases": []
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "theme": "dark",
+  "remember_window_geometry": true,
+  "start_with_last_project": true,
+  "start_with_last_query": false,
+  "always_on_top": true,
+  "max_visible_results": 40,
+  "selected_project_id": "6b33019aafa4463f8f1702b6b8831116",
+  "last_query": "windows",
+  "window_geometry": {
+    "width": 564,
+    "height": 840,
+    "left": 24,
+    "top": 120
+  },
+  "default_editor_command": "code"
+}

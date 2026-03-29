@@ -1,0 +1,46 @@
+{
+  "recent_queries": [
+    {
+      "query": "windows",
+      "count": 2,
+      "last_used_at": "2026-03-29T13:16:50"
+    },
+    {
+      "query": "page",
+      "count": 1,
+      "last_used_at": "2026-03-29T13:16:32"
+    }
+  ],
+  "recent_opens": [
+    {
+      "item_key": "symbol:codejump/app/ui/main_view.py:99:_configure_window",
+      "project_id": "6b33019aafa4463f8f1702b6b8831116",
+      "display_name": "_configure_window",
+      "relative_path": "codejump/app/ui/main_view.py",
+      "item_type": "symbol",
+      "line": 99,
+      "opened_at": "2026-03-29T13:16:50",
+      "count": 1
+    },
+    {
+      "item_key": "symbol:codejump/app/ui/theme.py:27:apply_page_theme",
+      "project_id": "6b33019aafa4463f8f1702b6b8831116",
+      "display_name": "apply_page_theme",
+      "relative_path": "codejump/app/ui/theme.py",
+      "item_type": "symbol",
+      "line": 27,
+      "opened_at": "2026-03-29T13:16:32",
+      "count": 1
+    },
+    {
+      "item_key": "symbol:codejump/core/models.py:17:WindowGeometry",
+      "project_id": "6b33019aafa4463f8f1702b6b8831116",
+      "display_name": "WindowGeometry",
+      "relative_path": "codejump/core/models.py",
+      "item_type": "symbol",
+      "line": 17,
+      "opened_at": "2026-03-29T13:12:15",
+      "count": 1
+    }
+  ]
+}
